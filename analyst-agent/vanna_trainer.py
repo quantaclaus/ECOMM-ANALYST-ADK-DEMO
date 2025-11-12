@@ -22,7 +22,7 @@ LOG_DIR = os.path.join(PROJECT_ROOT, 'logs')
 # --- Config ---
 SCHEMA_FILE_PATH = os.path.join(DATA_DIR, 'bquxjob_7414dc02_19a5d4a2dad.csv')
 QDRANT_PATH = os.path.join(DATA_DIR, 'qdrant_db') 
-YOUR_PROJECT_ID = 'flawless-empire-476014-j0'
+YOUR_PROJECT_ID = ''
 # --- End Config ---
 
 # --- Define the custom Vanna class ---
