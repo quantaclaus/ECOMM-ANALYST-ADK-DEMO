@@ -1,0 +1,26 @@
+# Python virtual environment
+.venv/
+venv/
+*.venv
+
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Generated data
+# You are generating this file, so it shouldn't be in git
+data/
+
+# ADK (or other) log files
+*.log
+logs/
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
