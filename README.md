@@ -48,3 +48,25 @@ cd [your-repo-name]
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
+### 2. Google Cloud Authentication
+```
+gcloud auth application-default login
+```
+### 3. Create .env File Create a .env file in the project root
+```
+GEMINI_API_KEY="your_google_gemini_api_key_here"
+GEMINI_MODEL="gemini-1.5-flash-latest"
+```
+### 4. Data Prep
+Place your schema file at: `data/ecomm-schema.csv`
+If your file has a different name, update the SCHEMA_FILE_PATH variable in vanna_trainer.py.
+
+### Build the Graph Knowledge Base
+`python src/bigquery_to_graph.py`
+
+### Train the Vanna SQL Model
+`python src/vanna_trainer.py`
+
+### Run the Agent from the Root Folder
+`adk web .`
