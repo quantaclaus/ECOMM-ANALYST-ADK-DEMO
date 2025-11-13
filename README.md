@@ -56,7 +56,7 @@ gcloud auth application-default login
 ### 3. Create .env File Create a .env file in the project root
 ```
 GEMINI_API_KEY="your_google_gemini_api_key_here"
-GEMINI_MODEL="gemini-1.5-flash-latest"
+GEMINI_MODEL="gemini-2.5-flash"
 ```
 ### 4. Data Prep
 Place your schema file at: `data/ecomm-schema.csv`
